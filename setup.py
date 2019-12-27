@@ -15827,9 +15827,13 @@ rightclick_menu.add_cascade(label="Word Spacing", menu=WordSpacingChild)
 SW_Main_UI.bind("<Button-1>", popupFocusOut)
 SW_Main_UI.bind("<Button-3>", popup)
 SW_Main_UI.bind('<Motion>', motion)
+import os
+cwd=os.getcwd()+"/"
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+# SW_Main_UI.iconphoto(True, PhotoImage("icons/Startwrite.png"))s
+# new_icon = PhotoImage(file="icons/11.png")
 
-new_icon = PhotoImage(file="icons/11.png")
+new_icon = PhotoImage(file="11.png")
 new_button = tk.Button(maintoolbarframe, image=new_icon, command=lambda: NewWindow(SW_Main_UI))
 new_button.image = new_icon
 wl_ttp = CreateToolTip(new_button, "New")
