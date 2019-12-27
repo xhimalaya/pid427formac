@@ -118,11 +118,11 @@ abt_sw.resizable(width=False, height=False)
 if "nt" == os.name:
     abt_sw.wm_iconbitmap(bitmap="icons/Startwrite.ico")
 else:
-    abt_sw.iconphoto(True, PhotoImage("Startwrite.png"))
+    abt_sw.iconphoto(True, PhotoImage(file=os.path.join("icons/Startwrite.png")))
 
 lbl_frm = Frame(abt_sw)
 lbl_frm.pack(side=LEFT, padx=10)
-img = PhotoImage("sw60trial.png")
+img = PhotoImage(file="icons/sw60trial.png")
 img = img.zoom(4)
 img = img.subsample(14)
 lbl1 = Label(lbl_frm, image=img)
