@@ -15827,103 +15827,99 @@ rightclick_menu.add_cascade(label="Word Spacing", menu=WordSpacingChild)
 SW_Main_UI.bind("<Button-1>", popupFocusOut)
 SW_Main_UI.bind("<Button-3>", popup)
 SW_Main_UI.bind('<Motion>', motion)
-import os
-cwd=os.getcwd()+"/"
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-# SW_Main_UI.iconphoto(True, PhotoImage("icons/Startwrite.png"))s
-# new_icon = PhotoImage(file="icons/11.png")
-
-new_icon = PhotoImage(file="11.png")
+# SW_Main_UI.iconphoto(True, PhotoImage("icons/Startwrite.png"))
+new_icon = PhotoImage(file="icons/11.png")
 new_button = tk.Button(maintoolbarframe, image=new_icon, command=lambda: NewWindow(SW_Main_UI))
 new_button.image = new_icon
 wl_ttp = CreateToolTip(new_button, "New")
 new_button.pack(side=LEFT, expand=0, ipady=4, ipadx=4)
 # ---------------------------------------------------------------------------------------------------------------#
-open_icon = PhotoImage(file="10.png")
+open_icon = PhotoImage(file="icons/10.png")
 open_button = tk.Button(maintoolbarframe, image=open_icon, command=openfile)
 open_button.image = open_icon
 wl_ttp = CreateToolTip(open_button, "Open")
 open_button.pack(side=LEFT, expand=0, ipady=4, ipadx=4)
 # ---------------------------------------------------------------------------------------------------------------#
-save_icon = PhotoImage(file="9.png")
+save_icon = PhotoImage(file="icons/9.png")
 save_button = tk.Button(maintoolbarframe, image=save_icon, command=saveasfile)
 save_button.image = save_icon
 wl_ttp = CreateToolTip(save_button, "Save")
 save_button.pack(side=LEFT, expand=0, ipady=4, ipadx=4)
 # ---------------------------------------------------------------------------------------------------------------#
-print_icon = PhotoImage(file="8.png")
+print_icon = PhotoImage(file="icons/8.png")
 print_button = tk.Button(maintoolbarframe, image=print_icon,command=print_file)
 print_button.image = print_icon
 wl_ttp = CreateToolTip(print_button, "Print")
 print_button.pack(side=LEFT, expand=0, ipady=4, ipadx=4)
 # ---------------------------------------------------------------------------------------------------------------#
-cut_icon = PhotoImage(file="27.png")
+cut_icon = PhotoImage(file="icons/27.png")
 cut_button = tk.Button(maintoolbarframe, image=cut_icon)
 cut_button.image = cut_icon
 wl_ttp = CreateToolTip(cut_button, "Cut")
 cut_button.pack(side=LEFT, expand=0, ipady=4, ipadx=4)
 # ---------------------------------------------------------------------------------------------------------------#
-copy_icon = PhotoImage(file="21.png")
+copy_icon = PhotoImage(file="icons/21.png")
 copy_button = tk.Button(maintoolbarframe, image=copy_icon)
 copy_button.image = copy_icon
 wl_ttp = CreateToolTip(copy_button, "Copy")
 copy_button.pack(side=LEFT, expand=0, ipady=4, ipadx=4)
 # ---------------------------------------------------------------------------------------------------------------#
-paste_icon = PhotoImage(file="24.png")
+paste_icon = PhotoImage(file="icons/24.png")
 paste_button = tk.Button(maintoolbarframe, image=paste_icon)
 paste_button.image = paste_icon
 wl_ttp = CreateToolTip(paste_button, "Paste")
 paste_button.pack(side=LEFT, expand=0, ipady=4, ipadx=4)
 # ---------------------------------------------------------------------------------------------------------------#
-new_art_box_icon = PhotoImage(file="22.png")
+new_art_box_icon = PhotoImage(file="icons/22.png")
 new_art_box_button = tk.Button(maintoolbarframe, image=new_art_box_icon, command=add_new_art_box)
 new_art_box_button.image = new_art_box_icon
 wl_ttp = CreateToolTip(new_art_box_button, "Add New Artbox")
 new_art_box_button.pack(side=LEFT, expand=0, ipady=4, ipadx=4)
 # ---------------------------------------------------------------------------------------------------------------#
-new_text_box_icon = PhotoImage(file="23.png")
+new_text_box_icon = PhotoImage(file="icons/23.png")
 new_text_box_button = tk.Button(maintoolbarframe, image=new_text_box_icon, command=add_text_box)
 new_text_box_button.image = new_text_box_icon
 wl_ttp = CreateToolTip(new_text_box_button, "Add New textbox")
 new_text_box_button.pack(side=LEFT, expand=0, ipady=4, ipadx=4)
 # ---------------------------------------------------------------------------------------------------------------#
-spell_check_icon = PhotoImage(file="20.png")
+spell_check_icon = PhotoImage(file="icons/20.png")
 spell_check_button = tk.Button(maintoolbarframe, image=spell_check_icon)
 spell_check_button.image = spell_check_icon
 wl_ttp = CreateToolTip(spell_check_button, "Spell check")
 spell_check_button.pack(side=LEFT, expand=0, ipady=4, ipadx=4)
 # ---------------------------------------------------------------------------------------------------------------#
-zoom_icon = PhotoImage(file="26.png")
+zoom_icon = PhotoImage(file="icons/26.png")
 zoom_button = tk.Button(maintoolbarframe, image=zoom_icon, command=zoom_wp)
 zoom_button.image = zoom_icon
 wl_ttp = CreateToolTip(zoom_button, "Zoom")
 zoom_button.pack(side=LEFT, expand=0, ipady=4, ipadx=4)
 # ---------------------------------------------------------------------------------------------------------------#
-fonts_icon = PhotoImage(file="25.png")
+fonts_icon = PhotoImage(file="icons/25.png")
 fonts_button = tk.Button(maintoolbarframe, image=fonts_icon, command=font_wp)
 fonts_button.image = fonts_icon
 wl_ttp = CreateToolTip(fonts_button, "Font")
 fonts_button.pack(side=LEFT, expand=0, ipady=4, ipadx=4)
 # ---------------------------------------------------------------------------------------------------------------#
-portrait_icon = PhotoImage(file="19.png")
+portrait_icon = PhotoImage(file="icons/19.png")
 portrait_button = tk.Button(maintoolbarframe, image=portrait_icon)
 portrait_button.image = portrait_icon
 wl_ttp = CreateToolTip(portrait_button, "Portrait")
 portrait_button.pack(side=LEFT, expand=0, ipady=4, ipadx=4)
 # ---------------------------------------------------------------------------------------------------------------#
-landscape_icon = PhotoImage(file="18.png")
+landscape_icon = PhotoImage(file="icons/18.png")
 landscape_button = tk.Button(maintoolbarframe, image=landscape_icon)
 landscape_button.image = landscape_icon
 wl_ttp = CreateToolTip(landscape_button, "Landscape")
 landscape_button.pack(side=LEFT, expand=0, ipady=4, ipadx=4)
 # ---------------------------------------------------------------------------------------------------------------#
-show_hide_grid_icon = PhotoImage(file="17.png")
+show_hide_grid_icon = PhotoImage(file="icons/17.png")
 show_hide_grid_button = tk.Button(maintoolbarframe, image=show_hide_grid_icon, command=gird_on)
 show_hide_grid_button.image = show_hide_grid_icon
 wl_ttp = CreateToolTip(show_hide_grid_button, "Grid")
 show_hide_grid_button.pack(side=LEFT, expand=0, ipady=4, ipadx=4)
 # ---------------------------------------------------------------------------------------------------------------#
-show_hide_grid_menu_icon = tk.PhotoImage(file="d11.png")
+show_hide_grid_menu_icon = tk.PhotoImage(file="icons/d11.png")
 show_hide_grid_menu_button = tk.Menubutton(maintoolbarframe, width=10, height=35, image=show_hide_grid_menu_icon)
 show_hide_grid_menu_button.menu = Menu(show_hide_grid_menu_button, tearoff=0)
 show_hide_grid_menu_button["menu"] = show_hide_grid_menu_button.menu
@@ -15933,19 +15929,19 @@ show_hide_grid_menu_button.menu.add_checkbutton(label="Show Gird", variable=shwg
 show_hide_grid_menu_button.menu.add_checkbutton(label="Snap to Gird", variable=snpgrd)
 show_hide_grid_menu_button.pack(side=LEFT)
 # ---------------------------------------------------------------------------------------------------------------#
-close_icon = PhotoImage(file="closewindow1.png")
+close_icon = PhotoImage(file="icons/closewindow1.png")
 close_button = tk.Button(maintoolbarframe, image=close_icon, command=close_wn)
 close_button.image = close_icon
 wl_ttp = CreateToolTip(close_button, "close")
 close_button.pack(side=RIGHT, expand=0)
 # ---------------------------------------------------------------------------------------------------------------#
-restaurar_icon = PhotoImage(file="restaurar2.png")
+restaurar_icon = PhotoImage(file="icons/restaurar2.png")
 restaurar_button = tk.Button(maintoolbarframe, image=restaurar_icon, command=restaurar_wn)
 restaurar_button.image = restaurar_icon
 wl_ttp = CreateToolTip(restaurar_button, "restaurar")
 restaurar_button.pack(side=RIGHT, expand=0)
 # ---------------------------------------------------------------------------------------------------------------#
-minimize_icon = PhotoImage(file="minimizewindow2.png")
+minimize_icon = PhotoImage(file="icons/minimizewindow2.png")
 minimize_button = tk.Button(maintoolbarframe, image=minimize_icon, command=minimize_wn)
 minimize_button.image = minimize_icon
 wl_ttp = CreateToolTip(minimize_button, "minimize")
